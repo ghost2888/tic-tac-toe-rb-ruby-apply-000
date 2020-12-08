@@ -139,7 +139,16 @@ end
 
 def play(board)
   until over?(board)
-  current_player(board)
-  turn(board)
+    current_player(board)
+    turn(board)
+  end
+  
+  if won?(board) == "X"
+    "Congratulations X!"
+  elsif won?(board) == "O"
+    "Congratulations O!"
+  else 
+    draw?(board) == true
+    "Cat's Game!"
   end
 end
