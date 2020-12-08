@@ -128,6 +128,7 @@ end
 def winner(board)
   if w = won?(board)
     board[w[0]]
+  end
 end
 
 def play(board)
