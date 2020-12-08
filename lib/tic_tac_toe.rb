@@ -34,9 +34,9 @@ def position_taken?(board, placement)
   end 
 end
 
-def valid_move?(board, index)
-  def position_taken?(array, ind)
-    if array[ind] == " " || array[ind] == "" || array[ind] == nil 
+def valid_move?(board, placement)
+  def position_taken?(array, placement)
+    if board[placement] == " " ||board[placement] == "" || board[placement] == nil 
       return false
     else 
       return true
