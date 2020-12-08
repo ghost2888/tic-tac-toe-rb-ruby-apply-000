@@ -42,7 +42,6 @@ def turn_count(board)
   counter = 0 
   board.any? {|num| num == "X" || num == "O"}
     counter += 1
-  end
   return counter
 end 
 
