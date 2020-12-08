@@ -27,36 +27,11 @@ def move(board, placement, player)
 end
 
 def position_taken?(board, placement)
-  if board[placement] == " " || board[placement] == "" || board[placement] == nil 
-  false
-  else 
-    true
-  end 
+  board[placement] == " " || board[placement] == ""
 end
 
 def valid_move?(board, placement)
-  def position_taken?(array, placement)
-    if board[placement] == " " ||board[placement] == "" || board[placement] == nil 
-      return false
-    else 
-      return true
-    end 
-end 
-
-def on_board?(placement)
-  if placement.between?(0,8) == true
-    return true
-  else 
-    return false
-  end
-end
-
-if (position_taken?(board, placement)) == false && (on_board?(placement) == true)
-  return true
-else
-  return false
-end
-
+  position_taken?(board,placement) != true && placement.between?(0,8)
 end
 
 def turn_count(board)
