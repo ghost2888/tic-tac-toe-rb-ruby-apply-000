@@ -142,4 +142,10 @@ def play(board)
     current_player(board)
     turn(board)
   end
+  
+  if won?(board) == true
+    "Congratulations #{winner(board)}!"
+  else
+    "Cat's Game!"
+  end
 end
