@@ -59,13 +59,13 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
-  index = user_input(input)
-  if valid_move?(board, input) 
-    move(board, input, current_player(board))
-    display_board(board)
+  index = input_to_index(input)
+  if valid_move?(board, index) 
+    move(board, index, current_player(board))
   else
     turn(board)
   end
+  display_board(board)
 end
 
 def won?(board)
