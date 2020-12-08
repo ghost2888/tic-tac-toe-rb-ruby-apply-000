@@ -127,7 +127,7 @@ end
 
 def winner(board)
   if WIN_COMBINATIONS = won?(board)
-    ""
+    board[WIN_COMBINATIONS[0]]
 end
 
 def play(board)
