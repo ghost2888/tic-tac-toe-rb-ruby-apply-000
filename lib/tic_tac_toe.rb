@@ -126,15 +126,8 @@ def over?(board)
 end
 
 def winner(board)
-  winning = [ ]
-  winning = won?(board)
-  if winning == false 
-    nil
-  elsif board[winning[0]] == "X"
-    "X"
-  else
-    "O"
-  end
+  if WIN_COMBINATIONS = won?(board)
+    ""
 end
 
 def play(board)
