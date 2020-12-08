@@ -138,8 +138,8 @@ def winner(board)
 end
 
 def play(board)
-  turn(board)
-  current_player(board)
   until over?(board)
-  
+  current_player(board)
+  turn(board)
+  end
 end
