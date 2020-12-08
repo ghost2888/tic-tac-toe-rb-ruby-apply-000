@@ -49,7 +49,7 @@ def turn_count(board)
 end 
 
 def current_player(board)
-  if board.inlcude?(1,3,5,7)
+  if board.include?(1,3,5,7)
     "X"
   else
     "O"
