@@ -49,11 +49,7 @@ def turn_count(board)
 end 
 
 def current_player(board)
-  if board.include?(.odd?)
-    "X"
-  else
-    "O"
-  end
+  if turn_count(board).odd? 
 end
 
 def turn(board)
