@@ -143,8 +143,8 @@ def play(board)
     turn(board)
   end
   
-  if won?(board) == true
-    "Congratulations #{!"
+  if won?(board) 
+    "Congratulations #{winner(board)}!"
   else
     "Cat's Game!"
   end
