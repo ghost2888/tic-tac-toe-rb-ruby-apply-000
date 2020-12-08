@@ -21,13 +21,13 @@ def input_to_index(user_input)
   return user_input.to_i - 1 
 end
 
-def move(board, index, player)
-  board[index] = player
+def move(board, placement, player)
+  board[placement] = player
   return board
 end
 
-def position_taken?(board, index)
-  if board[index] == " " || board[index] == "" || board[index] == nil 
+def position_taken?(board, placement)
+  if board[placement] == " " || board[placement] == "" || board[placement] == nil 
   false
   else 
     true
