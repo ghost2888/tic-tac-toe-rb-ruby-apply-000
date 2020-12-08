@@ -139,8 +139,7 @@ end
 
 def play(board)
   turn(board)
-    if over?(board) != true
-      turn(board)
-    end
-  break
+  current_player(board)
+  until over?(board)
+  
 end
